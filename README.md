@@ -4,4 +4,4 @@
 #Espaços de autoria e novas narrativas com Rmarkdown
 ### Palestrantes 
 #### Steven Dutt-Ross &
-#### Thiago Severo de Araujo
+#### Thiago de Araujo Severo dos Santos
