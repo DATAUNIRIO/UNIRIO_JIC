@@ -1,0 +1,274 @@
+---
+title: "Espaços de autoria e novas narrativas com Rmarkdown"
+author: "Steven Dutt-Ross & Thiago Severo de Araujo"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#install.packages("datasauRus")
+library(corrplot)
+library(ggmap)
+library(ggplot2)
+library(datasauRus)
+library(wordcloud2)
+```
+
+# Parte 1 - Texto, citação, lista e imagem
+
+Vou pedir para vocês escreverem um texto com três paragrafos (pode ser qualquer coisa. um relatório que você estava escrevendo ontem, uma poesia ou até mesmo o hino do flamengo)
+
+*combinar com o Thiago. uma proposta de texto:*
+
+Começo o curso registrado a minha solidariedade com a UERJ. NÃO ESTÁ NORMAL!
+
+“Aqui estão os loucos. Os desajustados. Os rebeldes. Os criadores de caso. Os pinos redondos nos buracos quadrados. Aqueles que vêem as coisas de forma diferente. Eles não curtem regras. E não respeitam o status quo. Você pode citá-los, discordar deles, glorificá-los ou caluniá-los. Mas a única coisa que você não pode fazer é ignorá-los. Porque eles mudam as coisas. Empurram a raça humana para a frente. E, enquanto alguns os vêem como loucos, nós os vemos como geniais. Porque as pessoas loucas o bastante para acreditar que podem mudar o mundo, são as que o mudam”.
+
+Imagine all the people Living for today
+
+Imagine there's no countries It isn't hard to do 
+Nothing to kill or die for And no religion too
+
+Imagine all the people Living life in peace
+You may say, I'm a dreamer But I'm not the only one 
+I hope someday you'll join us And the world will be as one
+
+Imagine no possessions I wonder if you can 
+No need for greed or hunger A Brotherhood of man
+
+Imagine all the people Sharing all the world
+
+You may say, I'm a dreamer But I'm not the only one 
+I hope someday you'll join us And the world will live as one
+
+*PEDIR PARA O THIAGO COLOCAR UM TEXTO OU LETRA DE MUSICA*
+
+
+#Como colocar citação?
+
+> Nunca conheci quem tivesse levado porrada.
+> Todos os meus conhecidos têm sido campeões em tudo.
+> estou farto de [semideuses!](http://www.releituras.com/fpessoa_linhareta.asp)
+> Onde é que há gente no mundo?
+> Então sou só eu que é vil e errôneo nesta terra?
+
+> Que mal fiz eu aos deuses todos? 
+> Se têm a verdade, guardem-na! 
+> Sou um técnico, mas tenho técnica só dentro da técnica. 
+Fora disso sou doido, com todo o direito a sê-lo. 
+Com todo o direito a sê-lo, ouviram? 
+> Queriam-me casado, fútil, quotidiano e [tributável?](http://www.jornaldepoesia.jor.br/facam15.html)
+
+Ou ainda
+
+> “Não pergunte se o **R** faz o que você quer....
+> A pergunta está errada!....
+> O correto é perguntar como se faz isso no **R** (eu já sei que o R faz. Só preciso descovrir como..(SILVA, ALEXANDRE; 2015)
+
+#Como colocar imagem?
+
+# Porque estudar Estatística?
+![](C:/Users/Hp/Pictures/homersimpson.png)  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# Esse não é o unico tipo de imagem
+Podemos colocar memes, gifs, e outros formatos
+
+![](https://media.giphy.com/media/jZtEA0nyCrVxm/giphy.gif)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+# Isso dá uma oportunidade para criar 
+:)
+
+![](https://media.giphy.com/media/M52wyuahvQfJK/giphy.gif)
+
+<br>
+<br>
+<br>
+Para fazer tópicos/bullets Lembrei do filme do Etore Scola.
+
+1. Feios,
+2. Sujos,
+3. e Malvados.
+
+Você pode fazer a lista que quiser....
+
+%PEDIR UMA LISTA AO THIAGO (Lista provisória)
+
+> "Se nos ferem, não sangramos?"
+
+1. Hamlet,
+2. MacBeth,
+3. Otelo,
+4. O Mercador de Veneza,
+5. Romeu & Julieta.
+
+# Parte 2. Aprendendo ênfase (tamanho, negrito e itálico) com Game of Thrones
+
+Mudando o tamanho da fonte
+
+#### "Winter Is Coming"
+  
+Ficou pequeno? que tal 
+
+# "Winter Is Coming"
+
+Mudando o tamanho das fontes.
+
+# "Winter Is Coming"
+## "Winter Is Coming"
+### "Winter Is Coming"
+#### "Winter Is Coming"
+
+# Colocando hiperlink
+
+Esse é o [mapa de Westeros](https://quartermaester.info/)
+
+Esse é o [site do GAE](http://gae.uniriotec.br/)
+
+# Colocando VIDEOS 
+VIDEOS (não está funcionando, coloquei como link)
+
+["Se os tubarões fossem homens" - Bertolt Brecht](https://www.youtube.com/watch?v=PJnM03vBM_E)
+
+[A Verdadeira Dívida Externa por Guaicaipuro Cuatemoc](https://www.youtube.com/watch?v=0gYFxBpPlOY)
+
+%PEDIR UM VIDEO AO THIAGO (Lista provisória)
+
+# Parte 3. Programando em R dentro do markdown
+
+## 3.1 Gráficos
+Vamos fazer um exemplo trivial
+
+### Diagrama de Dispersão
+
+```{r cars}
+#```{r cars, echo=FALSE}
+#```{r cars, results='hide'}
+#```{r cars, warning=FALSE}
+#```{r cars, menssage=FALSE}
+plot(cars$speed, cars$dist)
+plot(cars$speed, cars$dist, col="#0d6887",pch=19,main="Diagrama de Dispersão", xlab="Velocidade", ylab ="o que é disp?" )
+abline(lsfit(cars$speed, cars$dist),col="#032435", lty=2, lwd=4)
+```
+
+E ai? o que vocês acham dessa correlação?
+
+```{r datasaurus}
+dados <- datasaurus_dozen[1:142,]
+cor(dados$x,dados$y)
+```
+
+Vamos fazer o diagrama de dispersão para nos certificar...
+
+```{r datasaurus2}
+plot(dados$x,dados$y, col="#0d6887",pch=19)
+```
+
+Surpresa! Esse é um banco de dados para te mostrar que **sempre precisamos visualizar a estatística!**
+
+Todas essas figuras tem a mesma correlação (rho=-0.06).
+
+```{r datasaurus3}
+ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset)) +
+    geom_point() +
+    theme_void() +
+    theme(legend.position = "none") +
+facet_wrap( ~ dataset, ncol = 3)
+```
+
+Tá, mas que tal fazer uma matriz de Correlação?
+
+# Matriz de Correlação
+
+```{r correlacao, echo=FALSE}
+cor(mtcars[,c("disp","drat","hp","mpg","qsec","wt")])
+```
+
+Mas que coisa sem graça!
+
+```{r correlacao2, echo=FALSE}
+M <- cor(mtcars[,c("disp","drat","hp","mpg","qsec","wt")])
+corrplot(M, method="circle")
+```
+
+Agora sim!
+
+
+## 3.2 Mapas
+
+O Rio de Janeiro continua Lindo!
+
+# Mapa do Rio de Janeiro
+```{r mapa, echo=FALSE, warning=FALSE, menssage=FALSE}
+qmap(location = "rio de janeiro")
+qmap(location = "rio de janeiro", zoom = 14)
+qmap(location = "rio de janeiro", zoom = 15, maptype = "satellite")
+```
+
+
+## 3.3 Nuvem de palavras
+
+Você sabe o que é uma nuvem de palavras?
+
+Já se perguntou como as pessoas criam “wordclouds” (nuvens de palavras)? Nuvens de palavras são imagens compostas por palavras de várias cores e tamanhos e, opcionalmente, organizadas em direções distintas. Pois agora você saberá como e o melhor de tudo: aprenderá a criar a sua nuvem de palavras!
+
+Como criar a minha nuvem de palavras?
+
+```{r wordcloud, echo=FALSE}
+wordcloud2(data = demoFreq)
+```
+
+# Outras coisas legais...
+' escrever algo sobre programação HTML e CSS 
+' coisas do HTML tipo ',<br>, tags, etc...
+
+
+
+# Espera! Esqueci de algo?
+
+# Ahhh, sim! Mas e o LaTeX?
+
+Temos duas formas de colocar equações do LaTeX no RMarkdown
+
+A primeira....
+```
+```
+$$r =\frac{COV(x,y)}{S_xS_y} $$
+A segunda...
+
+Que tal colocar a **função de densidade da Normal**? 
+Comentário: Colocar a formjula no quadro antes
+
+\begin{equation}
+f(x) = \frac{1}{2\pi\sigma^{2}} e^{-\frac{1}{2 \sigma^{2}} (x - \mu)^{2}} 
+\end{equation}
+
+
+# E se fosse uma apresentação? como devemos fazer?
+<br>
+
+# A resposta a essa pergunta é REVEAL.JS
+
+
+
+Para maiores informações, [esse link é bem útil](http://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
+
+Agradecimentos aos professores Teresa Serrano, Alexandre Silva, Luciane Velasque, Bruno Francisco, Felipe Rafael, Maria Beatriz e Pimentel.
+
