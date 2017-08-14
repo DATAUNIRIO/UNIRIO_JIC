@@ -272,3 +272,7 @@ Para maiores informações, [esse link é bem útil](http://www.rstudio.com/wp-c
 
 Agradecimentos aos professores Teresa Serrano, Alexandre Silva, Luciane Velasque, Bruno Francisco, Felipe Rafael, Maria Beatriz e Pimentel.
 
+# Para estudar mais o R Markdown
+* [Tutorial do RStudio](http://rmarkdown.rstudio.com/lesson-1.html)
+* [Manual Referência R Markdown](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+* [Guia de dicas](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
