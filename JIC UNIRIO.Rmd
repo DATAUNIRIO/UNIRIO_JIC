@@ -44,7 +44,7 @@ I hope someday you'll join us And the world will live as one
 *PEDIR PARA O THIAGO COLOCAR UM TEXTO OU LETRA DE MUSICA*
 
 
-#Como colocar citação?
+# Como colocar citação?
 
 > Nunca conheci quem tivesse levado porrada.
 > Todos os meus conhecidos têm sido campeões em tudo.
@@ -64,6 +64,21 @@ Ou ainda
 > “Não pergunte se o **R** faz o que você quer....
 > A pergunta está errada!....
 > O correto é perguntar como se faz isso no **R** (eu já sei que o R faz. Só preciso descovrir como..(SILVA, ALEXANDRE; 2015)
+
+# Quebrar linhas
+Podemos adicionar quebras de linha em textos.
+Por exemplo, este texto:
+> R Markdown is a file format for making dynamic documents with R. An R Markdown document is written in markdown (an easy-to-write plain text format) and contains chunks of embedded R code, like the document below.
+
+Pode ser formatado dessa maneira:
+R Markdown is a file format for making dynamic documents with R. <br> An R Markdown document is written in markdown (an easy-to-write plain text format) and contains chunks of embedded R code, like the document below.
+
+Basta adicionar a tag 
+```html
+<br> 
+```
+Na posição onde você deseja quebra a linha (semelhante ao Enter ⏎ do seu teclado).
+Você pode quebrar linhas indefinidamente. 
 
 #Como colocar imagem?
 
@@ -119,6 +134,12 @@ Você pode fazer a lista que quiser....
 4. O Mercador de Veneza,
 5. Romeu & Julieta.
 
+## Também podemos criar uma lista não-ordenada
+* Caneta
+* Lápis
+* Borracha
+* Apagador
+
 # Parte 2. Aprendendo ênfase (tamanho, negrito e itálico) com Game of Thrones
 
 Mudando o tamanho da fonte
@@ -143,7 +164,7 @@ Esse é o [mapa de Westeros](https://quartermaester.info/)
 Esse é o [site do GAE](http://gae.uniriotec.br/)
 
 # Colocando VIDEOS 
-VIDEOS (não está funcionando, coloquei como link)
+<!-- VIDEOS (não está funcionando, coloquei como link) -->
 <!--
 ["Se os tubarões fossem homens" - Bertolt Brecht](https://www.youtube.com/watch?v=PJnM03vBM_E)
 -->
