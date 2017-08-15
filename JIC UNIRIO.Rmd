@@ -73,11 +73,11 @@ Por exemplo, este texto:
 Pode ser formatado dessa maneira:
 > R Markdown is a file format for making dynamic documents with R. <br><br> An R Markdown document is written in markdown (an easy-to-write plain text format) and contains chunks of embedded R code, like the document below.
 
-Basta adicionar a tag 
+Basta adicionar a tag: 
 ```html
-<br> 
+    <br> 
 ```
-Na posição onde você deseja quebra a linha (semelhante ao Enter ⏎ do seu teclado).
+Na posição onde você deseja quebrar a linha (semelhante ao Enter ⏎ do seu teclado).
 Você pode quebrar linhas indefinidamente. 
 
 #Como colocar imagem?
