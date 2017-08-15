@@ -176,8 +176,9 @@ Esse é o [site do GAE](http://gae.uniriotec.br/)
 
 ## A Verdadeira Dívida Externa, por Guaicaipuro Cuatemoc
 [![Vídeo "A Verdadeira Dívida Externa por Guaicaipuro Cuatemoc"](http://img.youtube.com/vi/0gYFxBpPlOY/0.jpg)](https://www.youtube.com/watch?v=0gYFxBpPlOY "A Verdadeira Dívida Externa, por Guaicaipuro Cuatemoc")
-
+<!--
 [[embed url=http://www.youtube.com/watch?v=6YbBmqUnoQM]]
+-->
 
 %PEDIR UM VIDEO AO THIAGO (Lista provisória)
 
