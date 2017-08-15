@@ -77,10 +77,13 @@ Basta adicionar a tag
 ```html
     <br> 
 ```
-Na posição onde você deseja quebrar a linha (semelhante ao Enter ⏎ do seu teclado).
+Na posição onde você deseja quebrar a linha (semelhante ao Enter ⏎ do seu teclado).<br>
 Você pode quebrar linhas indefinidamente. 
 
-#Como colocar imagem?
+Na posição onde você deseja quebrar a linha (semelhante ao Enter ⏎ do seu teclado).<br>
+Você pode quebrar linhas indefinidamente. 
+
+# Como colocar imagem?
 
 # Porque estudar Estatística?
 ![](C:/Users/Hp/Pictures/homersimpson.png)  
