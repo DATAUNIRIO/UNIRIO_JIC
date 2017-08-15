@@ -77,7 +77,7 @@ Basta adicionar a tag:
 ```html
     <br> 
 ```
-Na posição onde você deseja quebrar a linha (semelhante ao Enter <b>⏎</b> do seu teclado).
+Na posição onde você deseja quebrar a linha (semelhante ao Enter ⏎ do seu teclado).
 Você pode quebrar linhas indefinidamente. 
 
 #Como colocar imagem?
