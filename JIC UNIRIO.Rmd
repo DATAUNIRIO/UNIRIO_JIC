@@ -24,6 +24,8 @@ Começo o curso registrado a minha solidariedade com a UERJ. NÃO ESTÁ NORMAL!
 
 “Aqui estão os loucos. Os desajustados. Os rebeldes. Os criadores de caso. Os pinos redondos nos buracos quadrados. Aqueles que vêem as coisas de forma diferente. Eles não curtem regras. E não respeitam o status quo. Você pode citá-los, discordar deles, glorificá-los ou caluniá-los. Mas a única coisa que você não pode fazer é ignorá-los. Porque eles mudam as coisas. Empurram a raça humana para a frente. E, enquanto alguns os vêem como loucos, nós os vemos como geniais. Porque as pessoas loucas o bastante para acreditar que podem mudar o mundo, são as que o mudam”.
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id lorem eu felis fringilla consequat. Donec quis dolor vitae odio dignissim volutpat nec eget libero. Morbi hendrerit eros eget neque luctus, at varius leo dignissim. Donec sed neque accumsan, efficitur dui nec, feugiat lectus. Cras eu varius justo. Proin magna est, sodales et ex at, interdum eleifend tortor. Maecenas aliquet felis at libero feugiat, eu commodo purus sodales. Duis eu erat tincidunt, scelerisque enim ac, ultrices urna. 
+
 Imagine all the people Living for today
 
 Imagine there's no countries It isn't hard to do 
@@ -43,8 +45,44 @@ I hope someday you'll join us And the world will live as one
 
 *PEDIR PARA O THIAGO COLOCAR UM TEXTO OU LETRA DE MUSICA*
 
+If the rebel in me
 
-#Como colocar citação?
+Can touch the rebel in you
+
+And the rebel in you
+
+Can touch the rebel in me
+
+And the rebels we be
+
+Is gonna set us free
+
+Then it would bring out the rebel
+
+Bring out the rebel
+
+Bring out the rebel in me
+
+If the lover in you
+
+Can touch the lover in me
+
+And the lover in me
+
+Can touch the lover in you
+
+And the lovers we be
+
+Will bring sweet harmony
+
+Then it would bring out the love
+
+Bring out the love
+
+Bring out all the love in me
+
+
+# Como colocar citação?
 
 > Nunca conheci quem tivesse levado porrada.
 > Todos os meus conhecidos têm sido campeões em tudo.
@@ -65,7 +103,22 @@ Ou ainda
 > A pergunta está errada!....
 > O correto é perguntar como se faz isso no **R** (eu já sei que o R faz. Só preciso descovrir como..(SILVA, ALEXANDRE; 2015)
 
-#Como colocar imagem?
+# Quebra de linhas
+Podemos adicionar quebras de linha em textos. <br>
+Por exemplo:
+> R Markdown is a file format for making dynamic documents with R. An R Markdown document is written in markdown (an easy-to-write plain text format) and contains chunks of embedded R code, like the document below.
+
+Pode ser formatado dessa maneira:
+> R Markdown is a file format for making dynamic documents with R. <br> An R Markdown document is written in markdown (an easy-to-write plain text format) and contains chunks of embedded R code, like the document below.
+
+Basta adicionar a tag 
+```html
+    <br> 
+```
+Na posição onde você deseja quebrar a linha (semelhante ao Enter ⏎ do seu teclado).<br>
+Você pode quebrar linhas indefinidamente. 
+
+# Como colocar imagem?
 
 # Porque estudar Estatística?
 ![](C:/Users/Hp/Pictures/homersimpson.png)  
@@ -119,6 +172,12 @@ Você pode fazer a lista que quiser....
 4. O Mercador de Veneza,
 5. Romeu & Julieta.
 
+## Também podemos criar uma lista não-ordenada
+* Caneta
+* Lápis
+* Borracha
+* Apagador
+
 # Parte 2. Aprendendo ênfase (tamanho, negrito e itálico) com Game of Thrones
 
 Mudando o tamanho da fonte
@@ -143,11 +202,24 @@ Esse é o [mapa de Westeros](https://quartermaester.info/)
 Esse é o [site do GAE](http://gae.uniriotec.br/)
 
 # Colocando VIDEOS 
-VIDEOS (não está funcionando, coloquei como link)
-
+<!-- VIDEOS (não está funcionando, coloquei como link) -->
+<!--
 ["Se os tubarões fossem homens" - Bertolt Brecht](https://www.youtube.com/watch?v=PJnM03vBM_E)
-
+-->
+<!--
 [A Verdadeira Dívida Externa por Guaicaipuro Cuatemoc](https://www.youtube.com/watch?v=0gYFxBpPlOY)
+-->
+## "Se os tubarões fossem homens" - Bertolt Brecht
+[![Vídeo "Se os tubarões fossem homens"  - Bertolt Brecht](http://img.youtube.com/vi/PJnM03vBM_E/0.jpg)](https://www.youtube.com/watch?v=PJnM03vBM_E "Se os tubarões fossem homens")
+
+## A Verdadeira Dívida Externa, por Guaicaipuro Cuatemoc
+[![Vídeo "A Verdadeira Dívida Externa por Guaicaipuro Cuatemoc"](http://img.youtube.com/vi/0gYFxBpPlOY/0.jpg)](https://www.youtube.com/watch?v=0gYFxBpPlOY "A Verdadeira Dívida Externa, por Guaicaipuro Cuatemoc")
+
+## O Mapa da Matemática
+[![Vídeo "O Mapa da Matemática"](http://img.youtube.com/vi/OmJ-4B-mS-Y/0.jpg)](https://www.youtube.com/watch?v=0gYFxBpPlOY "O Mapa da Matemática")
+<!--
+[[embed url=http://www.youtube.com/watch?v=6YbBmqUnoQM]]
+-->
 
 %PEDIR UM VIDEO AO THIAGO (Lista provisória)
 
@@ -272,3 +344,7 @@ Para maiores informações, [esse link é bem útil](http://www.rstudio.com/wp-c
 
 Agradecimentos aos professores Teresa Serrano, Alexandre Silva, Luciane Velasque, Bruno Francisco, Felipe Rafael, Maria Beatriz e Pimentel.
 
+# Para estudar mais o R Markdown
+* [Tutorial do RStudio](http://rmarkdown.rstudio.com/lesson-1.html)
+* [Manual de referência](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+* [Guia de dicas](http://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
