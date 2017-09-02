@@ -43,7 +43,7 @@ Imagine all the people Sharing all the world
 You may say, I'm a dreamer But I'm not the only one 
 I hope someday you'll join us And the world will live as one
 
-*PEDIR PARA O THIAGO COLOCAR UM TEXTO OU LETRA DE MUSICA*
+
 
 If the rebel in me
 
@@ -84,6 +84,12 @@ Bring out all the love in me
 
 # Como colocar citação?
 
+> “Não pergunte se o **R** faz o que você quer....
+> A pergunta está errada!....
+> O correto é perguntar como se faz isso no **R** (eu já sei que o R faz. Só preciso descovrir como..(SILVA, ALEXANDRE; 2015)
+
+Ou ainda
+
 > Nunca conheci quem tivesse levado porrada.
 > Todos os meus conhecidos têm sido campeões em tudo.
 > estou farto de [semideuses!](http://www.releituras.com/fpessoa_linhareta.asp)
@@ -97,11 +103,7 @@ Fora disso sou doido, com todo o direito a sê-lo.
 Com todo o direito a sê-lo, ouviram? 
 > Queriam-me casado, fútil, quotidiano e [tributável?](http://www.jornaldepoesia.jor.br/facam15.html)
 
-Ou ainda
 
-> “Não pergunte se o **R** faz o que você quer....
-> A pergunta está errada!....
-> O correto é perguntar como se faz isso no **R** (eu já sei que o R faz. Só preciso descovrir como..(SILVA, ALEXANDRE; 2015)
 
 # Quebra de linhas
 Podemos adicionar quebras de linha em textos. <br>
@@ -115,10 +117,16 @@ Basta adicionar a tag
 ```html
     <br> 
 ```
+
 Na posição onde você deseja quebrar a linha (semelhante ao Enter ⏎ do seu teclado).<br>
 Você pode quebrar linhas indefinidamente. 
 
 # Como colocar imagem?
+
+Basta adicionar a tag 
+```html
+![](C:/enderenco/da/sua/imagem.png)
+```
 
 # Porque estudar Estatística?
 ![](C:/Users/Hp/Pictures/homersimpson.png)  
@@ -174,10 +182,13 @@ Você pode fazer a lista que quiser....
 5. Romeu & Julieta.
 
 ## Também podemos criar uma lista não-ordenada
+<!-- [poderiamos lista das musicas do r-spotify-popularity. o que vc acha ? -->
 * Caneta
 * Lápis
 * Borracha
 * Apagador
+
+
 
 # Parte 2. Aprendendo ênfase (tamanho, negrito e itálico) com Game of Thrones
 
@@ -198,18 +209,10 @@ Mudando o tamanho das fontes.
 
 # Colocando hiperlink
 
-Esse é o [mapa de Westeros](https://quartermaester.info/)
-
 Esse é o [site do GAE](http://gae.uniriotec.br/)
 
 # Colocando VIDEOS 
-<!-- VIDEOS (não está funcionando, coloquei como link) -->
-<!--
-["Se os tubarões fossem homens" - Bertolt Brecht](https://www.youtube.com/watch?v=PJnM03vBM_E)
--->
-<!--
-[A Verdadeira Dívida Externa por Guaicaipuro Cuatemoc](https://www.youtube.com/watch?v=0gYFxBpPlOY)
--->
+
 ## "Se os tubarões fossem homens" - Bertolt Brecht
 [![Vídeo "Se os tubarões fossem homens"  - Bertolt Brecht](http://img.youtube.com/vi/PJnM03vBM_E/0.jpg)](https://www.youtube.com/watch?v=PJnM03vBM_E "Se os tubarões fossem homens")
 
@@ -222,7 +225,6 @@ Esse é o [site do GAE](http://gae.uniriotec.br/)
 [[embed url=http://www.youtube.com/watch?v=6YbBmqUnoQM]]
 -->
 
-%PEDIR UM VIDEO AO THIAGO (Lista provisória)
 
 # Parte 3. Programando em R dentro do markdown
 
@@ -309,8 +311,7 @@ wordcloud2(data = demoFreq)
 ```
 
 # Outras coisas legais...
-' escrever algo sobre programação HTML e CSS 
-' coisas do HTML tipo ',<br>, tags, etc...
+' escrever algo sobre programação HTML e tags
 
 
 
@@ -327,8 +328,10 @@ $$r =\frac{COV(x,y)}{S_xS_y} $$
 A segunda...
 
 Que tal colocar a **função de densidade da Normal**? 
-Comentário: Colocar a formjula no quadro antes
 
+<!--
+Colocar a formjula no quadro antes
+-->
 \begin{equation}
 f(x) = \frac{1}{2\pi\sigma^{2}} e^{-\frac{1}{2 \sigma^{2}} (x - \mu)^{2}} 
 \end{equation}
