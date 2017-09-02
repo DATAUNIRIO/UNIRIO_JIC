@@ -86,6 +86,7 @@ Podemos colocar memes, gifs, e outros formatos
 <br>
 <br>
 <br>
+![](https://github.com/thiagoassantos/r-spotify-popularity/blob/master/wordcloud.png)
 <br>
 <br>
 <br>
