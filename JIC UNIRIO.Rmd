@@ -216,7 +216,7 @@ Esse é o [site do GAE](http://gae.uniriotec.br/)
 [![Vídeo "A Verdadeira Dívida Externa por Guaicaipuro Cuatemoc"](http://img.youtube.com/vi/0gYFxBpPlOY/0.jpg)](https://www.youtube.com/watch?v=0gYFxBpPlOY "A Verdadeira Dívida Externa, por Guaicaipuro Cuatemoc")
 
 ## O Mapa da Matemática
-[![Vídeo "O Mapa da Matemática"](http://img.youtube.com/vi/OmJ-4B-mS-Y/0.jpg)](https://www.youtube.com/watch?v=0gYFxBpPlOY "O Mapa da Matemática")
+[![Vídeo "O Mapa da Matemática"](http://img.youtube.com/vi/OmJ-4B-mS-Y/0.jpg)](https://www.youtube.com/watch?v=OmJ-4B-mS-Y "O Mapa da Matemática")
 <!--
 [[embed url=http://www.youtube.com/watch?v=6YbBmqUnoQM]]
 -->
