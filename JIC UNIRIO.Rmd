@@ -344,7 +344,8 @@ Agradecimentos aos professores Teresa Serrano, Alexandre Silva, Luciane Velasque
 
 
 
-####Biografia dos autores:
+#### Biografia dos autores:
+
 Steven Dutt-Ross<br>
 <br>
 Steven Dutt-Ross é um entusiasta do R, professor e pesquisador do Departamento de Métodos Quantitativos da UNIRIOI - DMQ/UNIRIO<br>
