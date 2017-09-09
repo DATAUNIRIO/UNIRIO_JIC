@@ -1,7 +1,13 @@
 ---
 title: "Espaços de autoria e novas narrativas com Rmarkdown"
 author: "Steven Dutt-Ross & Thiago de Araujo Severo dos Santos"
-output: html_document
+output: 
+  html_document:
+    theme: cerulean
+    highlight: tango
+    toc: true
+    toc_float: true
+    code_folding: hide
 ---
 
 ```{r setup, include=FALSE}
@@ -13,6 +19,7 @@ library(ggplot2)
 library(datasauRus)
 library(wordcloud2)
 ```
+
 
 # Texto, citação, lista e imagem
 
@@ -171,8 +178,6 @@ Você pode fazer a lista que quiser....
 * Borracha
 * Apagador
 
-
-
 # Aprendendo ênfase (tamanho, negrito e itálico) com Game of Thrones
 
 Mudando o tamanho da fonte
@@ -208,6 +213,30 @@ Esse é o [site do GAE](http://gae.uniriotec.br/)
 [[embed url=http://www.youtube.com/watch?v=6YbBmqUnoQM]]
 -->
 
+# YAML
+<!-- desenvolver algo sobre o YAML-->
+
+Aparência e Estilo
+
+Existe diversas opções de controle da aparência dos documentos em HTML. O que vem a sua cabeça quando eu falo a palavra **BOOTSTRAP**? (A. Nada.Nunca ouvi falar, B.reamostragem, C. customização)
+
+Bootstrap: Temas válidos "default", "cerulean", "journal", "flatly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", and "yeti". 
+
+Highlight style: estilos possíveis "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn", "haddock", and "textmate". Pass null to prevent syntax highlighting.
+
+Exemplo:
+
+output:
+  html_document:
+    theme: cerulean
+    highlight: tango
+    
+output:
+  html_document:
+    theme: cerulean
+    highlight: tango    
+    toc: true
+    toc_float: true
 
 # Programando em R dentro do markdown
 
@@ -216,7 +245,7 @@ Vamos fazer um exemplo trivial
 
 ### Diagrama de Dispersão
 
-```{r cars}
+```{r cars, echo=TRUE}
 #```{r cars, echo=FALSE}
 #```{r cars, results='hide'}
 #```{r cars, warning=FALSE}
@@ -228,14 +257,22 @@ abline(lsfit(cars$speed, cars$dist),col="#032435", lty=2, lwd=4)
 
 E ai? o que vocês acham dessa correlação?
 
-```{r datasaurus}
+```{r datasaurus, echo=TRUE}
 dados <- datasaurus_dozen[1:142,]
 cor(dados$x,dados$y)
 ```
 
+Vamos ver o banco de dados para nos certificar...(pesquisa reprodutível)
+
+
+```{r datasaurus2, echo=TRUE}
+library(DT)
+datatable(dados)
+```
+
 Vamos fazer o diagrama de dispersão para nos certificar...
 
-```{r datasaurus2}
+```{r datasaurus3, echo=TRUE}
 plot(dados$x,dados$y, col="#0d6887",pch=19)
 ```
 
@@ -243,7 +280,7 @@ Surpresa! Esse é um banco de dados para te mostrar que **sempre precisamos visu
 
 Todas essas figuras tem a mesma correlação (rho=-0.06).
 
-```{r datasaurus3}
+```{r datasaurus4, echo=TRUE}
 ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset)) +
     geom_point() +
     theme_void() +
@@ -255,13 +292,13 @@ Tá, mas que tal fazer uma matriz de Correlação?
 
 # Matriz de Correlação
 
-```{r correlacao, echo=FALSE}
+```{r correlacao, echo=TRUE}
 cor(mtcars[,c("disp","drat","hp","mpg","qsec","wt")])
 ```
 
 Mas que coisa sem graça!
 
-```{r correlacao2, echo=FALSE}
+```{r correlacao2, echo=TRUE}
 M <- cor(mtcars[,c("disp","drat","hp","mpg","qsec","wt")])
 corrplot(M, method="circle")
 ```
@@ -274,7 +311,7 @@ Agora sim!
 O Rio de Janeiro continua Lindo!
 
 # Mapa do Rio de Janeiro
-```{r mapa, echo=FALSE, warning=FALSE, menssage=FALSE}
+```{r mapa, echo=TRUE, warning=FALSE, menssage=FALSE}
 qmap(location = "rio de janeiro")
 qmap(location = "rio de janeiro", zoom = 14)
 qmap(location = "rio de janeiro", zoom = 15, maptype = "satellite")
@@ -289,7 +326,7 @@ Já se perguntou como as pessoas criam “wordclouds” (nuvens de palavras)? Nu
 
 Como criar a minha nuvem de palavras?
 
-```{r wordcloud, echo=FALSE}
+```{r wordcloud, echo=TRUE}
 wordcloud2(data = demoFreq)
 ```
 
@@ -313,7 +350,7 @@ A segunda...
 Que tal colocar a **função de densidade da Normal**? 
 
 <!--
-Colocar a formjula no quadro antes
+Colocar a formula no quadro antes
 -->
 \begin{equation}
 f(x) = \frac{1}{2\pi\sigma^{2}} e^{-\frac{1}{2 \sigma^{2}} (x - \mu)^{2}} 
@@ -328,6 +365,7 @@ f(x) = \frac{1}{2\pi\sigma^{2}} e^{-\frac{1}{2 \sigma^{2}} (x - \mu)^{2}}
 Falar um pouco do REVEAL.JS, flexdashboard, bookdown, blogdown e mindmap
 -->
 
+<!-- desenvolver algo sobre o word e o pdf também-->
 
 Para maiores informações, [esse link é bem útil](http://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
 
