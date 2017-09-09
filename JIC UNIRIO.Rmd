@@ -14,81 +14,66 @@ library(datasauRus)
 library(wordcloud2)
 ```
 
-# Parte 1 - Texto, citação, lista e imagem
+# Texto, citação, lista e imagem
 
+<!-- combinar com o Thiago. uma proposta de texto:-->
 Vou pedir para vocês escreverem um texto com três paragrafos (pode ser qualquer coisa. um relatório que você estava escrevendo ontem, uma poesia ou até mesmo o hino do flamengo)
 
-*combinar com o Thiago. uma proposta de texto:*
-
 Começo o curso registrado a minha solidariedade com a UERJ. NÃO ESTÁ NORMAL!
+
+### R: O devir revolucionário da Estatística/Ciência de Dados
+#### R de revolucionário 
+(texto baseado em Chapman) [What You Should Know About R](https://www.ama.org/publications/MarketingInsights/Pages/what-you-should-know-about-r.aspx)
+
+O **R** é uma linguagem de programação de **código aberto** e um ambiente para computação estatística. 
+
+R é a plataforma mais importante para o desenvolvimento de novos métodos estatísticos e a prática da ciência dos dados. Se você busca os mais recentes métodos estatísticos, a melhor aposta é que eles são implementados em R. Hoje, o R é a linguagem mais utilizada para cientistas de dados (junto com o Python).
+
+Além disso, é fácil utilizar o R para fazer qualquer análise de dados ou tarefa estatística que você possa inventar. **Não custa nada**, então universidades, estudantes e *startups* encontram poucas barreiras para adotá-lo. 
+
+Além disso, existem mais de 11.000 pacotes complementares para R - quase todos disponíveis gratuitamente - que estendem sua utilidade. Esses pacotes disponibilizam os mais recentes métodos em estatísticas e fornecem as bases para o desenvolvimento futuro.
+
+#### Pense em programação junto com a estatística
+
+R é uma linguagem de programação projetada para trabalhar com dados e implementar algoritmos estatísticos. Uma implicação óbvia é que, se você não gosta de programação, você não vai gostar de trabalhar com R. R não enfatiza a pespectiva *point&click* como um software tradicional de escritório; Em vez disso, ele usa linha de comando que interage com ferramentas para desenvolvedores, como um ambiente de desenvolvimento integrado.
+
+Isso significa que aprender R exige um investimento significativo e contínuo. Nenhum idioma - humano ou computador - pode ser aprendido fazendo uma breve oficina ou memorizando algumas palavras e estruturas de linguagem. Em vez disso, para se tornar fluente, **você deve praticar o idioma com freqüência** e usá-lo para tarefas importantes.
+
+> “Não pergunte se o **R** faz o que você quer....
+> A pergunta está errada!....
+> O correto é perguntar como se faz isso no **R** (eu já sei que o R faz. Só preciso descobrir como..(SILVA, ALEXANDRE; 2015)
+
+#### Resumo
+<!-- [criar uma lista não-ordenada -->
+* R é a plataforma mais importante para o desenvolvimento de novos métodos de análise de dados.
+* R é uma linguagem de programação projetada para trabalhar com dados e implementar algoritmos estatísticos.
+* Você deve aprender R como qualquer idioma: através da imersão.
+
+#### 7 fatos sobre o crescimento do R
+
+[fonte 2014](http://blog.revolutionanalytics.com/2014/04/seven-quick-facts-about-r.html)
+<!-- utilizar somente se o publico do minicurso for de SI-->
+1. R é a habilidade de TI mais bem paga (pesquisa Dice.com, janeiro de 2014)
+2. R a linguagem de ciência de dados mais utilizada após o SQL (pesquisa O'Reilly, janeiro de 2014)
+3. R é usado por 70% dos mineiros de dados (Rexer survey, outubro de 2013)
+4. R é # 15 de todas as linguagens de programação (rankings de linguagem RedMonk, janeiro de 2014)
+5. R crescendo mais rápido do que qualquer outra linguagem de ciência de dados (pesquisa KDNuggets, agosto de 2013)
+6. R é o software # 1 do Google Search for Advanced Analytics (Google Trends, março de 2014)
+7. R tem mais de 2 milhões de usuários em todo o mundo (estimativa Oracle, fevereiro de 2012)
+
+Se você ainda não usa R, você provavelmente deverá faze-lo em breve.
+
+<!-- utilizar somente se o publico do minicurso for de ciencias humanas e sociais -->
+Outro dia, conversando com um amigo, percebi que o sucesso de uma palestra depende muito do nome. O curso **CHORA PPT** faz um imenso sucesso. Desse modo, a partir desse momento, vou chamar esse curso de **CHORA EXCEL** ou de **CHORA SPSS** ainda não me decidi. você podem me ajudar?
+
+Conseguimos deixar vocês curiosos sobre o **R**?
 
 “Aqui estão os loucos. Os desajustados. Os rebeldes. Os criadores de caso. Os pinos redondos nos buracos quadrados. Aqueles que vêem as coisas de forma diferente. Eles não curtem regras. E não respeitam o status quo. Você pode citá-los, discordar deles, glorificá-los ou caluniá-los. Mas a única coisa que você não pode fazer é ignorá-los. Porque eles mudam as coisas. Empurram a raça humana para a frente. E, enquanto alguns os vêem como loucos, nós os vemos como geniais. Porque as pessoas loucas o bastante para acreditar que podem mudar o mundo, são as que o mudam”.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id lorem eu felis fringilla consequat. Donec quis dolor vitae odio dignissim volutpat nec eget libero. Morbi hendrerit eros eget neque luctus, at varius leo dignissim. Donec sed neque accumsan, efficitur dui nec, feugiat lectus. Cras eu varius justo. Proin magna est, sodales et ex at, interdum eleifend tortor. Maecenas aliquet felis at libero feugiat, eu commodo purus sodales. Duis eu erat tincidunt, scelerisque enim ac, ultrices urna. 
 
-Imagine all the people Living for today
-
-Imagine there's no countries It isn't hard to do 
-Nothing to kill or die for And no religion too
-
-Imagine all the people Living life in peace
-You may say, I'm a dreamer But I'm not the only one 
-I hope someday you'll join us And the world will be as one
-
-Imagine no possessions I wonder if you can 
-No need for greed or hunger A Brotherhood of man
-
-Imagine all the people Sharing all the world
-
-You may say, I'm a dreamer But I'm not the only one 
-I hope someday you'll join us And the world will live as one
-
-
-
-If the rebel in me
-
-Can touch the rebel in you
-
-And the rebel in you
-
-Can touch the rebel in me
-
-And the rebels we be
-
-Is gonna set us free
-
-Then it would bring out the rebel
-
-Bring out the rebel
-
-Bring out the rebel in me
-
-If the lover in you
-
-Can touch the lover in me
-
-And the lover in me
-
-Can touch the lover in you
-
-And the lovers we be
-
-Will bring sweet harmony
-
-Then it would bring out the love
-
-Bring out the love
-
-Bring out all the love in me
-
 
 # Como colocar citação?
-
-> “Não pergunte se o **R** faz o que você quer....
-> A pergunta está errada!....
-> O correto é perguntar como se faz isso no **R** (eu já sei que o R faz. Só preciso descovrir como..(SILVA, ALEXANDRE; 2015)
-
-Ou ainda
 
 > Nunca conheci quem tivesse levado porrada.
 > Todos os meus conhecidos têm sido campeões em tudo.
@@ -102,8 +87,6 @@ Ou ainda
 Fora disso sou doido, com todo o direito a sê-lo. 
 Com todo o direito a sê-lo, ouviram? 
 > Queriam-me casado, fútil, quotidiano e [tributável?](http://www.jornaldepoesia.jor.br/facam15.html)
-
-
 
 # Quebra de linhas
 Podemos adicionar quebras de linha em textos. <br>
@@ -190,7 +173,7 @@ Você pode fazer a lista que quiser....
 
 
 
-# Parte 2. Aprendendo ênfase (tamanho, negrito e itálico) com Game of Thrones
+# Aprendendo ênfase (tamanho, negrito e itálico) com Game of Thrones
 
 Mudando o tamanho da fonte
 
@@ -226,9 +209,9 @@ Esse é o [site do GAE](http://gae.uniriotec.br/)
 -->
 
 
-# Parte 3. Programando em R dentro do markdown
+# Programando em R dentro do markdown
 
-## 3.1 Gráficos
+## Gráficos
 Vamos fazer um exemplo trivial
 
 ### Diagrama de Dispersão
@@ -341,7 +324,9 @@ f(x) = \frac{1}{2\pi\sigma^{2}} e^{-\frac{1}{2 \sigma^{2}} (x - \mu)^{2}}
 <br>
 
 # A resposta a essa pergunta é REVEAL.JS
-
+<!--
+Falar um pouco do REVEAL.JS, flexdashboard, bookdown, blogdown e mindmap
+-->
 
 
 Para maiores informações, [esse link é bem útil](http://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
@@ -352,3 +337,18 @@ Agradecimentos aos professores Teresa Serrano, Alexandre Silva, Luciane Velasque
 * [Tutorial do RStudio](http://rmarkdown.rstudio.com/lesson-1.html)
 * [Manual de referência](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
 * [Guia de dicas](http://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
+
+
+
+* [Chapman,C. What You Should Know About R](https://www.ama.org/publications/MarketingInsights/Pages/what-you-should-know-about-r.aspx)
+
+
+
+####Biografia dos autores:
+Steven Dutt-Ross<br>
+<br>
+Steven Dutt-Ross é um entusiasta do R, professor e pesquisador do Departamento de Métodos Quantitativos da UNIRIOI - DMQ/UNIRIO<br>
+<br>
+Thiago de Araujo Severo dos Santos<br>
+<br>
+Thiago de Araujo Severo dos Santos é....
