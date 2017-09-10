@@ -150,7 +150,7 @@ Podemos colocar memes, gifs, e outros formatos
 
 #### Isso dá uma oportunidade para criar 
 
-Um exemplo: Distribuição Gaussiana entre o Van Gogh e o Esher
+Um exemplo: Distribuição Gaussiana entre o Van Gogh e o Esher. Isto é, o normal entre o louco e o maluco.
 
 ##### Van Gogh
 ![](http://big.assets.huffingtonpost.com/ohmyvangosh.gif)
