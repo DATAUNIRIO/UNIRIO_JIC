@@ -41,7 +41,10 @@ library(wordcloud2)
 ## REVEAL.JS, Flexdashboard, Bookdown, Blogdown, Pkgdown e Mindmap.
 
 <!-- combinar com o Thiago. uma proposta de texto:-->
+
 Vou pedir para vocês escreverem um texto com três parágrafos (pode ser qualquer coisa. um relatório que você estava escrevendo ontem, uma poesia ou até mesmo o hino do flamengo)
+
+![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/rmarkdown.png)
 
 Começo o curso registrado a minha solidariedade com a UERJ. NÃO ESTÁ NORMAL!
 
