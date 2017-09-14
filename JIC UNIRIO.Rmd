@@ -165,10 +165,10 @@ Fora disso sou doido, com todo o direito a sê-lo.
 Com todo o direito a sê-lo, ouviram? 
 > Queriam-me casado, fútil, quotidiano e [tributável?](http://www.jornaldepoesia.jor.br/facam15.html)
 
-# Como colocar imagem?
+# Como colocar imagem local?
 
-Basta adicionar a tag 
-```html
+Basta adicionar o comando
+```
 ![](C:/enderenco/da/sua/imagem.png)
 ```
 
@@ -184,10 +184,14 @@ Basta adicionar a tag
 <br>
 
 # Esse não é o unico tipo de imagem
-Podemos colocar memes, gifs, e outros formatos
+Podemos colocar memes, gifs, e outros formatos de imagens externas<br>
+(é só referenciar o link da imagem).
 
 ![](https://media.giphy.com/media/jZtEA0nyCrVxm/giphy.gif)
 <br>
+```
+![](https://media.giphy.com/media/jZtEA0nyCrVxm/giphy.gif)
+```
 <br>
 <br>
 <br>
@@ -199,7 +203,7 @@ Podemos colocar memes, gifs, e outros formatos
 <br>
 
 
-#### Isso dá uma oportunidade para criar 
+#### Isso dá uma oportunidade para criar... 
 
 Um exemplo: Distribuição Gaussiana entre o Van Gogh e o Esher. Isto é, o normal entre o louco e o maluco.
 
@@ -217,7 +221,7 @@ Um exemplo: Distribuição Gaussiana entre o Van Gogh e o Esher. Isto é, o norm
 <br>
 <br>
 
-# Colocando VIDEOS 
+# Colocando VÍDEOS 
 
 ## "R: The most powerful and most widely used statistical software" - Bertolt Brecht
 [![Vídeo "R: The most powerful and most widely used statistical software"  ](http://img.youtube.com/vi/UeMheG03w4s/0.jpg)](https://www.youtube.com/watch?v=UeMheG03w4s&feature=youtu.be "R: The most powerful and most widely used statistical software")
