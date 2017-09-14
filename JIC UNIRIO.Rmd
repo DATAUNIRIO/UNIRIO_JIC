@@ -167,7 +167,7 @@ Com todo o direito a sê-lo, ouviram?
 
 # Como colocar imagem local?
 
-Basta adicionar o comando
+Basta adicionar o comando:
 ```
 ![](C:/enderenco/da/sua/imagem.png)
 ```
@@ -175,13 +175,14 @@ Basta adicionar o comando
 # Porque estudar Estatística?
 ![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/homersimpson.png)  
 <br>
+<!--<br>
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
-<br>
+-->
 
 # Esse não é o unico tipo de imagem
 Podemos colocar memes, gifs, e outros formatos de imagens externas<br>
