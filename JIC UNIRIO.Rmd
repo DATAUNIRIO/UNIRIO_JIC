@@ -149,10 +149,11 @@ Esse é o [site do GAE](http://gae.uniriotec.br/)
   + Estatística
   + Data Science
 * Músicas
-  + Pop
-    + Pop Rock
-      + Teste  
-  + Rock Sinfônico
+  + Pop 
+  + Rock
+    + Rock Progressivo
+      + Rock Sinfônico
+    + Hard Rock
 <!--
 * Caneta
 * Lápis
