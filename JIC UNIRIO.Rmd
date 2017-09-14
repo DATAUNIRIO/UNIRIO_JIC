@@ -261,7 +261,7 @@ YAML é uma linguagem que pretende simplificar a codificação de dados.<br>
 No caso do R Markdown, ela define informações (metadados) do documento, inclusive sua estilização.<br>
 Por padrão, o documento é gerado em uma página HTML, mas podemos escolher outros formatos. Os mais usados são PDF e _.Docx_ (Word).
 
-Basta alterar o atributo de `output`. Exemplo:
+Basta alterar a opção de `output`. Exemplo:
 * Para gerar um PDF: 
 `output: pdf_document`
 
