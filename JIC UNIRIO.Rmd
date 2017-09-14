@@ -265,7 +265,7 @@ Basta alterar o atributo `output`. Exemplo:
 * Para gerar um PDF: 
 `output: pdf_document`
 
-* Para gerar um PDF: 
+* Para gerar um documento do Word: 
 `output: word_document`
 
 Para consultar outros formatos de saída, veja: http://rmarkdown.rstudio.com/lesson-9.html
