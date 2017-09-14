@@ -151,9 +151,9 @@ Esse é o [site do GAE](http://gae.uniriotec.br/)
 * Músicas
   + Pop 
   + Rock
+    + Rock Nacional
     + Rock Progressivo
       + Rock Sinfônico
-    + Hard Rock
 <!--
 * Caneta
 * Lápis
