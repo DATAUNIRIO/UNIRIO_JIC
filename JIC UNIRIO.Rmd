@@ -154,8 +154,6 @@ Esse é o [site do GAE](http://gae.uniriotec.br/)
     + Rock Nacional
     + Rock Progressivo
       + Rock Sinfônico
-
-:grinning:
 <!--
 * Caneta
 * Lápis
