@@ -408,12 +408,12 @@ Agradecimentos aos professores Teresa Serrano, Alexandre Silva, Luciane Velasque
 
 #### Biografia dos autores:
 
-Steven Dutt-Ross<br>
+**Steven Dutt-Ross**<br>
 <br>
 Steven Dutt-Ross é um entusiasta do R, professor e pesquisador do Departamento de Métodos Quantitativos da UNIRIO - DMQ/UNIRIO<br>
 <br>
-Thiago de Araujo Severo dos Santos<br>
+**Thiago de Araujo Severo dos Santos**<br>
 <br>
-Thiago de Araujo Severo dos Santos é....
+[Thiago de Araujo Severo dos Santos](https://github.com/thiagoassantos/) é estudante de Sistemas de Informação da UNIRIO e bolsista do projeto de extensão [DATAUNIRIO](https://dataunirio.github.io/).
 
 <!-- fazer uma sugestão para todos criarem uma conta no github -->
