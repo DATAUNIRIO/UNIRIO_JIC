@@ -258,7 +258,17 @@ Você pode quebrar linhas indefinidamente.
 # YAML
 <!-- desenvolver algo sobre o YAML-->
 É uma linguagem que pretende simplificar a codificação de dados.<br>
-No caso do R Markdown, ela serve para definir informações (metadados) do documento, inclusive sua estilização.
+No caso do R Markdown, ela serve para definir informações (metadados) do documento, inclusive sua estilização.<br>
+Por padrão, o documento é gerado em uma página HTML, mas podemos escolher outros formatos. Os mais usados são PDF e _.Docx_ (Word).
+
+Basta alterar o atributo `output`. Exemplo:
+* Para gerar um PDF: 
+`output: pdf_document`
+
+* Para gerar um PDF: 
+`output: word_document`
+
+Para consultar outros formatos de saída, veja: http://rmarkdown.rstudio.com/lesson-9.html
 
 ## Aparência e Estilo
 
