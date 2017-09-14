@@ -150,6 +150,7 @@ Esse é o [site do GAE](http://gae.uniriotec.br/)
   + Data Science
 * Músicas
   + Pop
+    + Pop Rock
   + Rock Sinfônico
 <!--
 * Caneta
