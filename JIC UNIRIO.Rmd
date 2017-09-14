@@ -257,8 +257,8 @@ Você pode quebrar linhas indefinidamente.
 
 # YAML
 <!-- desenvolver algo sobre o YAML-->
-É uma linguagem que pretende simplificar a codificação de dados.
-No caso do R Markdown, ela serve para definir informações (metadados) do documento.
+É uma linguagem que pretende simplificar a codificação de dados.<br>
+No caso do R Markdown, ela serve para definir informações (metadados) do documento, inclusive sua estilização.
 
 ## Aparência e Estilo
 
