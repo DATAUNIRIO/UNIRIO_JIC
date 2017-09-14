@@ -188,11 +188,11 @@ Basta adicionar o comando:
 Podemos colocar memes, gifs, e outros formatos de imagens externas<br>
 (é só referenciar o link da imagem).
 
+```
+![](https://media.giphy.com/media/jZtEA0nyCrVxm/giphy.gif)
+```
 ![](https://media.giphy.com/media/jZtEA0nyCrVxm/giphy.gif)
 <br>
-```
-![](https://media.giphy.com/media/jZtEA0nyCrVxm/giphy.gif)
-```
 <br>
 <br>
 <br>
