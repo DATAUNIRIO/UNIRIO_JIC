@@ -2,7 +2,7 @@
 title: "Espaços de autoria e novas narrativas com Rmarkdown"
 author: 
 - Steven Dutt-Ross
-- Thiago de Araujo Severo dos Santos"
+- Thiago de Araujo Severo dos Santos
 output: 
   html_document:
     theme: cerulean
