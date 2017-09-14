@@ -406,6 +406,8 @@ Agradecimentos aos professores Teresa Serrano, Alexandre Silva, Luciane Velasque
 
 * [Chapman,C. What You Should Know About R](https://www.ama.org/publications/MarketingInsights/Pages/what-you-should-know-about-r.aspx)
 
+---
+
 #### Biografia dos autores:
 
 **Steven Dutt-Ross**<br>
