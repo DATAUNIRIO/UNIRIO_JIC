@@ -260,24 +260,24 @@ Você pode quebrar linhas indefinidamente.
 É uma linguagem que pretende simplificar a codificação de dados.
 No caso do R Markdown, ela serve para definir informações (metadados) do documento.
 
-Aparência e Estilo
+## Aparência e Estilo
 
 Existem diversas opções de controle da aparência dos documentos em HTML. O que vem a sua cabeça quando eu falo a palavra **BOOTSTRAP**? <br>
 A. Nada. Nunca ouvi falar,<br>
 B. Reamostragem,<br>
 C. Customização (Aparência e Estilo)<br>
 
-**Bootstrap**: Temas válidos "default", "cerulean", "journal", "flatly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", and "yeti". 
+**Bootstrap**: temas válidos "default", "cerulean", "journal", "flatly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", and "yeti". 
 
 **Highlight style**: estilos possíveis "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn", "haddock", and "textmate". Pass null to prevent syntax highlighting.
 
 Exemplo:
-
+```
 output:
   html_document:
     theme: cerulean
     highlight: tango
-
+```
 # Programando em R dentro do Markdown
 
 #### Gráficos
