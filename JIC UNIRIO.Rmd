@@ -139,11 +139,22 @@ Esse é o [site do GAE](http://gae.uniriotec.br/)
 
 ## Também podemos criar uma lista não-ordenada
 <!-- [poderiamos lista das musicas do r-spotify-popularity. o que vc acha ? -->
+* Séries
+  + Game of Thrones
+  + Vikings
+  + Mr. Robot
+* Estudos
+  + Estatística
+  + Data Science
+* Músicas
+  + Pop
+  + Rock Sinfônico
+<!--
 * Caneta
 * Lápis
 * Borracha
 * Apagador
-
+-->
 
 # Como colocar citação?
 
