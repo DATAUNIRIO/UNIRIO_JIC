@@ -1,6 +1,8 @@
 ---
 title: "Espaços de autoria e novas narrativas com Rmarkdown"
-author: "Steven Dutt-Ross & Thiago de Araujo Severo dos Santos"
+author: 
+- Steven Dutt-Ross
+- Thiago de Araujo Severo dos Santos
 output: 
   html_document:
     theme: cerulean
@@ -139,11 +141,25 @@ Esse é o [site do GAE](http://gae.uniriotec.br/)
 
 ## Também podemos criar uma lista não-ordenada
 <!-- [poderiamos lista das musicas do r-spotify-popularity. o que vc acha ? -->
+* Séries
+  + Game of Thrones
+  + Vikings
+  + Mr. Robot
+* Estudos
+  + Estatística
+  + Data Science
+* Músicas
+  + Pop 
+  + Rock
+    + Rock Nacional
+    + Rock Progressivo
+      + Rock Sinfônico
+<!--
 * Caneta
 * Lápis
 * Borracha
 * Apagador
-
+-->
 
 # Como colocar citação?
 
@@ -154,27 +170,32 @@ Fora disso sou doido, com todo o direito a sê-lo.
 Com todo o direito a sê-lo, ouviram? 
 > Queriam-me casado, fútil, quotidiano e [tributável?](http://www.jornaldepoesia.jor.br/facam15.html)
 
-# Como colocar imagem?
+# Como colocar imagem local?
 
-Basta adicionar a tag 
-```html
+Basta adicionar o comando:
+```
 ![](C:/enderenco/da/sua/imagem.png)
 ```
 
 # Porque estudar Estatística?
 ![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/homersimpson.png)  
 <br>
+<!--<br>
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
-<br>
+-->
 
 # Esse não é o unico tipo de imagem
-Podemos colocar memes, gifs, e outros formatos
+Podemos colocar memes, gifs, e outros formatos de imagens externas<br>
+(é só referenciar o link da imagem).
 
+```
+![](https://media.giphy.com/media/jZtEA0nyCrVxm/giphy.gif)
+```
 ![](https://media.giphy.com/media/jZtEA0nyCrVxm/giphy.gif)
 <br>
 <br>
@@ -188,7 +209,7 @@ Podemos colocar memes, gifs, e outros formatos
 <br>
 
 
-#### Isso dá uma oportunidade para criar 
+#### Isso dá uma oportunidade para criar... 
 
 Um exemplo: Distribuição Gaussiana entre o Van Gogh e o Esher. Isto é, o normal entre o louco e o maluco.
 
@@ -206,7 +227,7 @@ Um exemplo: Distribuição Gaussiana entre o Van Gogh e o Esher. Isto é, o norm
 <br>
 <br>
 
-# Colocando VIDEOS 
+# Colocando VÍDEOS 
 
 ## "R: The most powerful and most widely used statistical software" - Bertolt Brecht
 [![Vídeo "R: The most powerful and most widely used statistical software"  ](http://img.youtube.com/vi/UeMheG03w4s/0.jpg)](https://www.youtube.com/watch?v=UeMheG03w4s&feature=youtu.be "R: The most powerful and most widely used statistical software")
@@ -226,7 +247,7 @@ Por exemplo:
 > R Markdown is a file format for making dynamic documents with R. An R Markdown document is written in markdown (an easy-to-write plain text format) and contains chunks of embedded R code, like the document below.
 
 Pode ser formatado dessa maneira:
-> R Markdown is a file format for making dynamic documents with R. <br> An R Markdown document is written in markdown (an easy-to-write plain text format) and contains chunks of embedded R code, like the document below.
+> R Markdown is a file format for making dynamic documents with R.█<br> An R Markdown document is written in markdown (an easy-to-write plain text format) and contains chunks of embedded R code, like the document below.
 
 Basta adicionar a tag 
 ```html
@@ -239,25 +260,37 @@ Você pode quebrar linhas indefinidamente.
 
 # YAML
 <!-- desenvolver algo sobre o YAML-->
+YAML é uma linguagem que pretende simplificar a codificação de dados.<br>
+No caso do R Markdown, ela define informações (metadados) no início do documento, inclusive sua estilização.<br>
+Por padrão, o documento é gerado em uma página HTML, mas podemos escolher outros formatos. Os mais usados são PDF e _.Docx_ (Word).
 
-Aparência e Estilo
+Basta alterar a opção de `output`. Exemplo:
+* Para gerar um PDF: 
+`output: pdf_document`
 
-Existe diversas opções de controle da aparência dos documentos em HTML. O que vem a sua cabeça quando eu falo a palavra **BOOTSTRAP**? <br>
+* Para gerar um documento do Word: 
+`output: word_document`
+
+Para consultar outros formatos de saída, veja: http://rmarkdown.rstudio.com/lesson-9.html
+
+## Aparência e Estilo
+
+Existem diversas opções de controle da aparência dos documentos em HTML. O que vem a sua cabeça quando eu falo a palavra **BOOTSTRAP**? <br>
 A. Nada. Nunca ouvi falar,<br>
 B. Reamostragem,<br>
 C. Customização (Aparência e Estilo)<br>
 
-**Bootstrap**: Temas válidos "default", "cerulean", "journal", "flatly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", and "yeti". 
+**Bootstrap**: temas válidos "default", "cerulean", "journal", "flatly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", and "yeti". 
 
 **Highlight style**: estilos possíveis "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn", "haddock", and "textmate". Pass null to prevent syntax highlighting.
 
 Exemplo:
-
+```
 output:
   html_document:
     theme: cerulean
     highlight: tango
-
+```
 # Programando em R dentro do Markdown
 
 #### Gráficos
@@ -390,14 +423,16 @@ Agradecimentos aos professores Teresa Serrano, Alexandre Silva, Luciane Velasque
 
 * [Chapman,C. What You Should Know About R](https://www.ama.org/publications/MarketingInsights/Pages/what-you-should-know-about-r.aspx)
 
+---
+
 #### Biografia dos autores:
 
-Steven Dutt-Ross<br>
+**Steven Dutt-Ross**<br>
 <br>
 Steven Dutt-Ross é um entusiasta do R, professor e pesquisador do Departamento de Métodos Quantitativos da UNIRIO - DMQ/UNIRIO<br>
 <br>
-Thiago de Araujo Severo dos Santos<br>
+**Thiago de Araujo Severo dos Santos**<br>
 <br>
-Thiago de Araujo Severo dos Santos é....
+[Thiago de Araujo Severo dos Santos](https://github.com/thiagoassantos/) é estudante de Sistemas de Informação da UNIRIO e bolsista do projeto de extensão [DATAUNIRIO](https://dataunirio.github.io/).
 
 <!-- fazer uma sugestão para todos criarem uma conta no github -->
