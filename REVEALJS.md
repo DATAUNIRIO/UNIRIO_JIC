@@ -50,14 +50,6 @@ navigation: section
 - Apresentações no Markdown e outros pacotes.
 
 
-
-R Markdown
-========================================================
-
-Vou pedir para vocês escreverem um texto com três parágrafos<br>
-<br>
-(pode ser qualquer coisa. um relatório que você estava escrevendo ontem, uma poesia ou até mesmo o hino do flamengo)
-
 R de REVOLUCIONÁRIO
 ========================================================
 
@@ -78,6 +70,33 @@ R Markdown
 ========================================================
 
 ![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/rmarkdown0.png)
+
+
+R Markdown
+========================================================
+
+![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/rmarkdown1.png)
+
+R Markdown
+========================================================
+
+Markdown é uma linguagem de marcação simples para escrever textos<br>
+O texto pode ser lido sem nenhum processamento, ou seja, da maneira como está escrito<br>
+Outras linguagens de marcação como HTML e LATEX<br>
+requerem um grande número de tags para formatar o texto, muitas vezes dificultando a leitura do código-fonte<br>
+A proposta do Markdown é que o escritor se concentre no texto e não na formatação<br>
+Pode ser convertido para vários outros formatos além de HTML<br>
+fonte: Fernando Mayer (UFPR)
+
+R Markdown
+========================================================
+
+![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/rmarkdown2.png)
+
+R Markdown
+========================================================
+
+![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/rmarkdown3.png)
 
 Slides com códigos
 ========================================================
@@ -102,34 +121,6 @@ Slides com gráficos
 
 ![plot of chunk unnamed-chunk-2](REVEALJS-figure/unnamed-chunk-2-1.png)
 
-
-R Markdown
-========================================================
-
-![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/rmarkdown1.png)
-
-R Markdown
-========================================================
-
-![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/rmarkdown2.png)
-
-R Markdown
-========================================================
-
-![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/rmarkdown3.png)
-
-R Markdown
-========================================================
-
-Markdown é uma linguagem de marcação simples para escrever textos<br>
-O texto pode ser lido sem nenhum processamento, ou seja, da maneira como está escrito
-Outras linguagens de marcação como HTML e LATEX<br>
-requerem um grande número de tags para formatar o texto, muitas vezes dificultando a leitura do código-fonte<br>
-A proposta do Markdown é que o escritor se concentre no texto e não na formatação<br>
-Pode ser convertido para vários outros formatos além de HTML<br>
-fonte: Fernando Mayer (UFPR)
-
-
 Pesquisa reprodutível
 ========================================================
 
@@ -138,5 +129,12 @@ Pesquisa reprodutível
 - Modelos
 - Documentação
 - Relátório
+
+R Markdown
+========================================================
+
+Vou pedir para vocês escreverem um texto com três parágrafos<br>
+<br>
+(pode ser qualquer coisa. um relatório que você estava escrevendo ontem, uma poesia ou até mesmo o hino do Flamengo)
 
 ========================================================
