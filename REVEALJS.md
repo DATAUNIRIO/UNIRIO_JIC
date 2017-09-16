@@ -33,7 +33,7 @@ navigation: section
 - Mapa do Rio de Janeiro.
 - Nuvem de palavras.
 - Colocar equações do LaTeX no RMarkdown.
-- REVEAL.JS, Flexdashboard, Bookdown, Blogdown, Pkgdown e Mindmap.
+- Apresentações no Markdown e outros pacotes.
 
 
 
@@ -114,5 +114,15 @@ requerem um grande número de tags para formatar o texto, muitas vezes dificulta
 A proposta do Markdown é que o escritor se concentre no texto e não na formatação<br>
 Pode ser convertido para vários outros formatos além de HTML<br>
 fonte: Fernando Mayer (UFPR)
+
+
+Pesquisa reprodutível
+========================================================
+
+- Bancos de Dados
+- Códigos
+- Modelos
+- Documentação
+- Relátório
 
 ========================================================

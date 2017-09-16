@@ -10,6 +10,10 @@ output:
     toc: true
     toc_float: true
     code_folding: hide
+  pdf_document:
+always_allow_html: yes
+
+    
 ---
 
 ```{r setup, include=FALSE}
@@ -24,10 +28,6 @@ library(wordcloud2)
 
 
 <!-- combinar com o Thiago. uma proposta de texto:-->
-
-
-
-![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/rmarkdown.png)
 
 Começo o curso registrado a minha solidariedade com a UERJ. NÃO ESTÁ NORMAL!
 
@@ -254,6 +254,24 @@ output:
     theme: cerulean
     highlight: tango
 ```
+<!--
+output: 
+  pdf_document:
+    toc: true
+    highlight: zenburn
+    always_allow_html: yes
+  word_document:
+    fig_width: 5
+    fig_height: 5
+    fig_caption: true
+    always_allow_html: yes
+  html_document:
+    theme: cerulean
+    highlight: tango
+    toc: true
+    toc_float: true
+    code_folding: hide
+-->
 # Programando em R dentro do Markdown
 
 #### Gráficos
@@ -368,11 +386,37 @@ Que tal colocar a **função de densidade da Normal**?
 f(x) = \frac{1}{2\pi\sigma^{2}} e^{-\frac{1}{2 \sigma^{2}} (x - \mu)^{2}} 
 \end{equation}
 
+
+# Um modelo de regressão
+
+```{r regressao, echo=TRUE}
+data(mtcars)
+modelo1<-lm(mpg~hp, data=mtcars)
+modelo1
+```
+
+A estimativa do $\beta_1$ desse modelo linear simples é 
+`r coef(modelo1)[2]`.
+
+
 # E se fosse uma apresentação? como devemos fazer?
 <br>
+Existem diversas forams de apresentações no Rmarkdown. As mais utilizadas são:<br>
 
-### A resposta a essa pergunta é REVEAL.JS
-<!--Falar um pouco do REVEAL.JS, flexdashboard, bookdown, blogdown e mindmap-->
+a. ioslides_presentation<br>
+b. slidy_presentation<br>
+c. beamer_presentation<br>
+d. slidify <br>
+
+# Outros pacotes interessantes
+
+1. mindr (pacote para gerar mapas mentais a partir do Rmarkdown)
+2. flexdashboard, 
+3. bookdown, 
+4. blogdown, e
+5. mindmap
+
+
 <!-- desenvolver algo sobre o word e o pdf também-->
 
 Para maiores informações, [esse link é bem útil](http://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
@@ -392,7 +436,7 @@ Agradecimentos aos professores Teresa Serrano, Alexandre Silva, Luciane Velasque
 
 **Steven Dutt-Ross**<br>
 <br>
-Steven Dutt-Ross é um entusiasta do R, professor e pesquisador do Departamento de Métodos Quantitativos da UNIRIO - DMQ/UNIRIO<br>
+[Steven Dutt-Ross](https://stevendutt.shinyapps.io/pagina/) é um entusiasta do R, professor e pesquisador do Departamento de Métodos Quantitativos da UNIRIO - DMQ/UNIRIO<br>
 <br>
 **Thiago de Araujo Severo dos Santos**<br>
 <br>
