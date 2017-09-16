@@ -98,7 +98,12 @@ R Markdown
 R Markdown
 ========================================================
 
-![](C:/Users/Steven/Documents/GitHub/UNIRIO_JIC/rmarkdown4.png)
-
+Markdown é uma linguagem de marcação simples para escrever textos<br>
+O texto pode ser lido sem nenhum processamento, ou seja, da maneira como está escrito
+Outras linguagens de marcação como HTML e LATEX<br>
+requerem um grande número de tags para formatar o texto, muitas vezes dificultando a leitura do código-fonte<br>
+A proposta do Markdown é que o escritor se concentre no texto e não na formatação<br>
+Pode ser convertido para vários outros formatos além de HTML<br>
+fonte: Fernando Mayer (UFPR)
 
 ========================================================
