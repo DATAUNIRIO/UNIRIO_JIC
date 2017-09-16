@@ -10,6 +10,20 @@ author:
 Steven Dutt-Ross<br>
 Thiago de Araujo Severo dos Santos
 
+
+RMarkdown: O devir revolucionário da Estatística/Ciência de Dados
+========================================================
+navigation: section
+
+[Significado de Devir](https://www.dicio.com.br/devir/)
+
+> Processo de mudança permanente que atua como regra, sendo capaz de criar, transformar e modificar tudo o que existe; essa própria mudança.
+
+<br>
+
+> Há situações nas quais a única saída para o homem é devir-revolucionário" (Deleuze)
+
+
 ROTEIRO
 ========================================================
 navigation: section
@@ -63,7 +77,7 @@ R de REVOLUCIONÁRIO
 R Markdown
 ========================================================
 
-![](C:/Users/Steven/Documents/GitHub/UNIRIO_JIC/rmarkdown0.png)
+![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/rmarkdown0.png)
 
 Slides com códigos
 ========================================================
@@ -92,17 +106,17 @@ Slides com gráficos
 R Markdown
 ========================================================
 
-![](C:/Users/Steven/Documents/GitHub/UNIRIO_JIC/rmarkdown1.png)
+![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/rmarkdown1.png)
 
 R Markdown
 ========================================================
 
-![](C:/Users/Steven/Documents/GitHub/UNIRIO_JIC/rmarkdown2.png)
+![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/rmarkdown2.png)
 
 R Markdown
 ========================================================
 
-![](C:/Users/Steven/Documents/GitHub/UNIRIO_JIC/rmarkdown3.png)
+![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/rmarkdown3.png)
 
 R Markdown
 ========================================================

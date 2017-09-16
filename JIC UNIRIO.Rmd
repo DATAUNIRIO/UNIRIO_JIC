@@ -10,10 +10,6 @@ output:
     toc: true
     toc_float: true
     code_folding: hide
-  pdf_document:
-always_allow_html: yes
-
-    
 ---
 
 ```{r setup, include=FALSE}
@@ -26,14 +22,18 @@ library(datasauRus)
 library(wordcloud2)
 ```
 
-
-<!-- combinar com o Thiago. uma proposta de texto:-->
-
 Começo o curso registrado a minha solidariedade com a UERJ. NÃO ESTÁ NORMAL!
 
-### R: O devir revolucionário da Estatística/Ciência de Dados
+### RMarkdown: O devir revolucionário da Estatística/Ciência de Dados
 
-(texto baseado em Chapman) [What You Should Know About R](https://www.ama.org/publications/MarketingInsights/Pages/what-you-should-know-about-r.aspx)
+[Significado de Devir](https://www.dicio.com.br/devir/)
+
+> Processo de mudança permanente que atua como regra, sendo capaz de criar, transformar e modificar tudo o que existe; essa própria mudança.
+
+<br>
+
+> Há situações nas quais a única saída para o homem é devir-revolucionário" (Deleuze)
+
 
 #### R de revolucionário 
 
@@ -406,6 +406,7 @@ Existem diversas forams de apresentações no Rmarkdown. As mais utilizadas são
 a. ioslides_presentation<br>
 b. slidy_presentation<br>
 c. beamer_presentation<br>
+  1.output: beamer_presentation
 d. slidify <br>
 
 # Outros pacotes interessantes
@@ -442,4 +443,3 @@ Agradecimentos aos professores Teresa Serrano, Alexandre Silva, Luciane Velasque
 <br>
 [Thiago de Araujo Severo dos Santos](https://github.com/thiagoassantos/) é estudante de Sistemas de Informação da UNIRIO e bolsista do projeto de extensão [DATAUNIRIO](https://dataunirio.github.io/).
 
-<!-- fazer uma sugestão para todos criarem uma conta no github -->

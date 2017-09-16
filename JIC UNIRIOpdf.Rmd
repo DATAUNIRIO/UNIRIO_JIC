@@ -1,0 +1,423 @@
+---
+title: "Espaços de autoria e novas narrativas com Rmarkdown"
+author: 
+- Steven Dutt-Ross
+- Thiago de Araujo Severo dos Santos
+output: 
+  pdf_document:
+    latex_engine: xelatex
+always_allow_html: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#install.packages("datasauRus")
+library(corrplot)
+library(ggmap)
+library(ggplot2)
+library(datasauRus)
+library(wordcloud2)
+```
+
+latex_engine: xelatex 
+
+Começo o curso registrado a minha solidariedade com a UERJ. NÃO ESTÁ NORMAL!
+
+### RMarkdown: O devir revolucionário da Estatística/Ciência de Dados
+
+[Significado de Devir](https://www.dicio.com.br/devir/)
+> Processo de mudança permanente que atua como regra, sendo capaz de criar, transformar e modificar tudo o que existe; essa própria mudança.
+<br>
+> Há situações nas quais a única saída para o homem é devir-revolucionário" (Deleuze)
+
+
+#### R de revolucionário 
+
+O **R** é uma linguagem de programação de **código aberto** e um ambiente para computação estatística. 
+
+* R é a plataforma mais importante para o desenvolvimento de novos métodos estatísticos e a prática da ciência dos dados. Se você busca os mais recentes métodos estatísticos, a melhor aposta é que eles são implementados em R. 
+* É fácil utilizar o R para fazer qualquer análise de dados ou tarefa estatística que você possa inventar. **Não custa nada**, então universidades, estudantes e *startups* encontram poucas barreiras para adotá-lo. 
+* Existem mais de 11.000 pacotes complementares para R - quase todos disponíveis gratuitamente - que estendem sua utilidade. Esses pacotes disponibilizam os mais recentes métodos em estatísticas e fornecem as bases para o desenvolvimento futuro.
+
+#### Pense em programação junto com a estatística
+
+R é uma linguagem de programação projetada para trabalhar com dados e implementar algoritmos estatísticos. Uma implicação óbvia é que, se você não gosta de programação, você não vai gostar de trabalhar com R. R não enfatiza a perspectiva *point&click* como um software tradicional de escritório; Em vez disso, ele usa linha de comando que interage com ferramentas para desenvolvedores, como um ambiente de desenvolvimento integrado.
+
+Isso significa que aprender R exige um investimento significativo e contínuo. Nenhum idioma - humano ou computador - pode ser aprendido fazendo uma breve oficina ou memorizando algumas palavras e estruturas de linguagem. Em vez disso, para se tornar fluente, **você deve praticar o idioma com freqüência** e usá-lo para tarefas importantes.
+
+> O R SÓ NÃO FAZ CHOVER...(SILVA, ALEXANDRE; 2015)
+
+> “Não pergunte se o **R** faz o que você quer....
+> A pergunta está errada!....
+> O correto é perguntar como se faz isso no **R** (eu já sei que o R faz. Só preciso descobrir como.."(SILVA, ALEXANDRE; 2015)
+
+#### Resumo
+<!-- [criar uma lista não-ordenada -->
+* R é a plataforma mais importante para o desenvolvimento de novos métodos de análise de dados.
+* R é uma linguagem de programação projetada para trabalhar com dados e implementar algoritmos estatísticos.
+* Você deve aprender R como qualquer idioma: através da imersão.
+
+#### Por que você deve usar R?
+
+1. **O R é a Ferrari dos softwares estatísticos!** Para mim, o R faz cerca de 99% das coisas que eu preciso fazer, mas, infelizmente, quando eu preciso falar com a minha esposa, eu ainda tenho que pegar o telefone.
+2. O R é a  **principal ferramenta para a estatística e análise de dados**. É mais do que um *software* estatístico; é uma linguagem de programação, assim você pode criar seus próprios objetos, funções e pacotes.
+3. Falando de pacotes, **existem mais de 11.000 pacotes** de contribuições dos usuários disponíveis no SITE do R (CRAN). Muitos pacotes são colocados pelos membros mais proeminentes de seus respectivos campos.
+4. Você pode **usá-lo facilmente em qualquer lugar**. É independente de plataforma, de modo que você pode usá-lo em qualquer sistema operacional. 
+5. E **é grátis**, assim você pode usá-lo em qualquer empresa, escola, em qualquer local sem ter que convencer o chefe a comprar uma licença.
+6. R tem uma **grande (e crescente) comunidade de usuários**. As listas de discussão fornecer acesso a muitos usuários e autores de pacotes que são especialistas em seus respectivos campos. Além disso, existem várias conferências R cada ano. 
+
+Por que eu uso o R em sala de aula? Para empoderar os alunos.  Ao utilizar uma ferramenta de análise como o R, acredito que os alunos começam a se sentir diferentes. Respeitados. Capazes. Poderosos. ** A maioria dos softwares é construída para centralizar e controlar os dados, mas não para democratizá-los. Como resultado, as pessoas  ficam reféns dos especialistas para responder questões básicas. ** O R é diferente! É democrático! É de graça! USE R! 
+
+Se você ainda não usa R, você provavelmente deverá fazê-lo em breve.
+
+<!-- utilizar somente se o publico do minicurso for de ciencias humanas e sociais -->
+Outro dia, conversando com um amigo, percebi que o sucesso de uma palestra depende muito do nome. O curso **CHORA PPT** faz um imenso sucesso. Desse modo, a partir desse momento, vou chamar esse curso de **CHORA EXCEL** ou de **CHORA SPSS** ainda não me decidi. você podem me ajudar?
+
+# Aprendendo ênfase (tamanho, negrito e itálico) com Game of Thrones
+
+Mudando o tamanho da fonte
+
+#### "Winter Is Coming"
+  
+Ficou pequeno? que tal 
+
+# "Winter Is Coming"
+
+Mudando o tamanho das fontes.
+
+# "Winter Is Coming"
+## "Winter Is Coming"
+### "Winter Is Coming"
+#### "Winter Is Coming"
+
+# Colocando hiperlink
+
+Esse é o [site do GAE](http://gae.uniriotec.br/)
+
+#Para fazer tópicos/bullets.
+
+> "Se nos ferem, não sangramos?"
+
+1. Hamlet,
+2. MacBeth,
+3. Otelo,
+4. O Mercador de Veneza,
+5. Romeu & Julieta.
+
+## Também podemos criar uma lista não-ordenada
+<!-- [poderiamos lista das musicas do r-spotify-popularity. o que vc acha ? -->
+* Séries
+  + Game of Thrones
+  + Vikings
+  + Mr. Robot
+* Estudos
+  + Estatística
+  + Data Science
+* Músicas
+  + Pop 
+  + Rock
+    + Rock Nacional
+    + Rock Progressivo
+      + Rock Sinfônico
+
+# Como colocar citação?
+
+> Que mal fiz eu aos deuses todos? 
+> Se têm a verdade, guardem-na! 
+> Sou um técnico, mas tenho técnica só dentro da técnica. 
+Fora disso sou doido, com todo o direito a sê-lo. 
+Com todo o direito a sê-lo, ouviram? 
+> Queriam-me casado, fútil, quotidiano e [tributável?](http://www.jornaldepoesia.jor.br/facam15.html)
+
+# Como colocar imagem local?
+
+Basta adicionar o comando:
+```
+![](C:/enderenco/da/sua/imagem.png)
+```
+
+# Porque estudar Estatística?
+![](https://raw.githubusercontent.com/DATAUNIRIO/UNIRIO_JIC/master/homersimpson.png)  
+<br>
+<!--<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+-->
+
+# Esse não é o unico tipo de imagem
+Podemos colocar memes, gifs, e outros formatos de imagens externas<br>
+(é só referenciar o link da imagem).
+
+```
+![](https://media.giphy.com/media/jZtEA0nyCrVxm/giphy.gif)
+```
+![](https://media.giphy.com/media/jZtEA0nyCrVxm/giphy.gif)
+<br>
+<br>
+<br>
+<br>
+![](https://raw.githubusercontent.com/thiagoassantos/r-spotify-popularity/master/wordcloud.png)
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+#### Isso dá uma oportunidade para criar... 
+
+Um exemplo: Distribuição Gaussiana entre o Van Gogh e o Esher. Isto é, o normal entre o louco e o maluco.
+
+##### Van Gogh
+![](http://big.assets.huffingtonpost.com/ohmyvangosh.gif)
+
+<br>
+
+##### Distribuição Gaussiana
+![](http://edventure-ga.com/ap/normal.gif)
+
+##### Esher
+![](https://media.giphy.com/media/KhD7MU5Kt7F16/giphy.gif)
+
+<br>
+<br>
+
+# Colocando VÍDEOS 
+
+## "R: The most powerful and most widely used statistical software" - Bertolt Brecht
+[![Vídeo "R: The most powerful and most widely used statistical software"  ](http://img.youtube.com/vi/UeMheG03w4s/0.jpg)](https://www.youtube.com/watch?v=UeMheG03w4s&feature=youtu.be "R: The most powerful and most widely used statistical software")
+
+## A Verdadeira Dívida Externa, por Guaicaipuro Cuatemoc
+[![Vídeo "A Verdadeira Dívida Externa por Guaicaipuro Cuatemoc"](http://img.youtube.com/vi/0gYFxBpPlOY/0.jpg)](https://www.youtube.com/watch?v=0gYFxBpPlOY "A Verdadeira Dívida Externa, por Guaicaipuro Cuatemoc")
+
+## O Mapa da Matemática (legendado)
+[![Vídeo "O Mapa da Matemática"](http://img.youtube.com/vi/OmJ-4B-mS-Y/0.jpg)](https://www.youtube.com/watch?v=OmJ-4B-mS-Y "O Mapa da Matemática")
+<!--
+[[embed url=http://www.youtube.com/watch?v=6YbBmqUnoQM]]
+-->
+
+# Quebra de linhas
+Podemos adicionar quebras de linha em textos. <br>
+Por exemplo:
+> R Markdown is a file format for making dynamic documents with R. An R Markdown document is written in markdown (an easy-to-write plain text format) and contains chunks of embedded R code, like the document below.
+
+Pode ser formatado dessa maneira:
+> R Markdown is a file format for making dynamic documents with R.█<br> An R Markdown document is written in markdown (an easy-to-write plain text format) and contains chunks of embedded R code, like the document below.
+
+Basta adicionar a tag 
+```html
+    <br> 
+```
+
+Na posição onde você deseja quebrar a linha (semelhante ao Enter ⏎ do seu teclado).<br>
+Você pode quebrar linhas indefinidamente. 
+
+
+# YAML
+<!-- desenvolver algo sobre o YAML-->
+YAML é uma linguagem que pretende simplificar a codificação de dados.<br>
+No caso do R Markdown, ela define informações (metadados) no início do documento, inclusive sua estilização.<br>
+Por padrão, o documento é gerado em uma página HTML, mas podemos escolher outros formatos. Os mais usados são PDF e _.Docx_ (Word).
+
+Basta alterar a opção de `output`. Exemplo:
+* Para gerar um PDF: 
+`output: pdf_document`
+
+* Para gerar um documento do Word: 
+`output: word_document`
+
+Para consultar outros formatos de saída, veja: http://rmarkdown.rstudio.com/lesson-9.html
+
+## Aparência e Estilo
+
+Existem diversas opções de controle da aparência dos documentos em HTML. O que vem a sua cabeça quando eu falo a palavra **BOOTSTRAP**? <br>
+A. Nada. Nunca ouvi falar,<br>
+B. Reamostragem,<br>
+C. Customização (Aparência e Estilo)<br>
+
+**Bootstrap**: temas válidos "default", "cerulean", "journal", "flatly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", and "yeti". 
+
+**Highlight style**: estilos possíveis "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn", "haddock", and "textmate". Pass null to prevent syntax highlighting.
+
+Exemplo:
+```
+output:
+  html_document:
+    theme: cerulean
+    highlight: tango
+```
+# Programando em R dentro do Markdown
+
+#### Gráficos
+Vamos fazer um exemplo trivial
+
+#### Diagrama de Dispersão
+
+```{r cars, echo=TRUE}
+#```{r cars, echo=FALSE}
+#```{r cars, results='hide'}
+#```{r cars, warning=FALSE}
+#```{r cars, menssage=FALSE}
+plot(cars$speed, cars$dist)
+plot(cars$speed, cars$dist, col="#0d6887",pch=19,main="Diagrama de Dispersão", xlab="Velocidade", ylab ="o que é disp?" )
+abline(lsfit(cars$speed, cars$dist),col="#032435", lty=2, lwd=4)
+```
+
+E ai? o que vocês acham dessa correlação?
+
+```{r datasaurus, echo=TRUE}
+dados <- datasaurus_dozen[1:142,]
+cor(dados$x,dados$y)
+```
+
+Vamos ver o banco de dados para nos certificar...(pesquisa reprodutível)
+
+
+```{r datasaurus2, echo=TRUE}
+library(DT)
+datatable(dados)
+```
+
+Vamos fazer o diagrama de dispersão para nos certificar...
+
+```{r datasaurus3, echo=TRUE}
+plot(dados$x,dados$y, col="#0d6887",pch=19)
+```
+
+Surpresa! Esse é um banco de dados para te mostrar que **sempre precisamos visualizar a estatística!**
+
+Todas essas figuras tem a mesma correlação (rho=-0.06).
+
+```{r datasaurus4, echo=TRUE}
+ggplot(datasaurus_dozen, aes(x = x, y = y, colour = dataset)) +
+    geom_point() +
+    theme_void() +
+    theme(legend.position = "none") +
+facet_wrap( ~ dataset, ncol = 3)
+```
+
+Tá, mas que tal fazer uma matriz de Correlação?
+
+## Matriz de Correlação
+
+```{r correlacao, echo=TRUE}
+cor(mtcars[,c("disp","drat","hp","mpg","qsec","wt")])
+```
+
+Mas que coisa sem graça!
+
+```{r correlacao2, echo=TRUE}
+M <- cor(mtcars[,c("disp","drat","hp","mpg","qsec","wt")])
+corrplot(M, method="circle")
+```
+
+Agora sim!
+
+
+## Mapas
+
+O Rio de Janeiro continua Lindo!
+
+### Mapa do Rio de Janeiro
+```{r mapa, echo=TRUE, warning=FALSE, menssage=FALSE}
+#qmap(location = "rio de janeiro")
+#qmap(location = "rio de janeiro", zoom = 14)
+#qmap(location = "rio de janeiro", zoom = 15, maptype = "satellite")
+```
+
+
+## Nuvem de palavras
+
+Você sabe o que é uma nuvem de palavras?
+
+Já se perguntou como as pessoas criam “wordclouds” (nuvens de palavras)? Nuvens de palavras são imagens compostas por palavras de várias cores e tamanhos e, opcionalmente, organizadas em direções distintas. Pois agora você saberá como e o melhor de tudo: aprenderá a criar a sua nuvem de palavras!
+
+Como criar a minha nuvem de palavras?
+
+```{r wordcloud, echo=TRUE}
+wordcloud2(data = demoFreq)
+```
+
+# Outras coisas legais...
+<!--' escrever algo sobre programação HTML e tags-->
+
+# Espera! Esqueci de algo?
+
+### Ahhh, sim! Mas e o LaTeX?
+
+Temos duas formas de **colocar equações do LaTeX no RMarkdown**
+
+A primeira....
+```
+```
+$$r =\frac{COV(x,y)}{S_xS_y} $$
+A segunda...
+
+Que tal colocar a **função de densidade da Normal**? 
+
+<!--Colocar a formula no quadro antes-->
+\begin{equation}
+f(x) = \frac{1}{2\pi\sigma^{2}} e^{-\frac{1}{2 \sigma^{2}} (x - \mu)^{2}} 
+\end{equation}
+
+
+# Um modelo de regressão
+
+```{r regressao, echo=TRUE}
+data(mtcars)
+modelo1<-lm(mpg~hp, data=mtcars)
+modelo1
+```
+
+A estimativa do $\beta_1$ desse modelo linear simples é 
+`r coef(modelo1)[2]`.
+
+
+# E se fosse uma apresentação? como devemos fazer?
+<br>
+Existem diversas forams de apresentações no Rmarkdown. As mais utilizadas são:<br>
+
+a. ioslides_presentation<br>
+b. slidy_presentation<br>
+c. beamer_presentation<br>
+  1.output: beamer_presentation
+d. slidify <br>
+
+# Outros pacotes interessantes
+
+1. mindr (pacote para gerar mapas mentais a partir do Rmarkdown)
+2. flexdashboard, 
+3. bookdown, 
+4. blogdown, e
+5. mindmap
+
+
+<!-- desenvolver algo sobre o word e o pdf também-->
+
+Para maiores informações, [esse link é bem útil](http://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
+
+Agradecimentos aos professores Teresa Serrano, Alexandre Silva, Luciane Velasque, Bruno Francisco, Felipe Rafael, Maria Beatriz e Pimentel.
+
+# Para estudar mais o R Markdown
+* [Tutorial do RStudio](http://rmarkdown.rstudio.com/lesson-1.html)
+* [Manual de referência](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+* [Guia de dicas](http://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
+
+* [Chapman,C. What You Should Know About R](https://www.ama.org/publications/MarketingInsights/Pages/what-you-should-know-about-r.aspx)
+
+---
+
+#### Biografia dos autores:
+
+**Steven Dutt-Ross**<br>
+<br>
+[Steven Dutt-Ross](https://stevendutt.shinyapps.io/pagina/) é um entusiasta do R, professor e pesquisador do Departamento de Métodos Quantitativos da UNIRIO - DMQ/UNIRIO<br>
+<br>
+**Thiago de Araujo Severo dos Santos**<br>
+<br>
+[Thiago de Araujo Severo dos Santos](https://github.com/thiagoassantos/) é estudante de Sistemas de Informação da UNIRIO e bolsista do projeto de extensão [DATAUNIRIO](https://dataunirio.github.io/).
+
