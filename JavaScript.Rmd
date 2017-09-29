@@ -1,0 +1,30 @@
+---
+title: "AulaMarkdown"
+author: "Thiago A. S. Santos"
+date: "28 de setembro de 2017"
+output: 
+  html_document:
+    theme: cerulean
+    highlight: pygments
+---
+
+## JavaScript dentro do R Markdown
+
+<!-- JavaScript padrão -->
+<script>alert("Olá, mundo!");</script>
+
+<!-- Importa jQuery (biblioteca JavaScript para efeitos) -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#botao").click(function(){
+      alert("Você clicou em mim.\n Efeito via jQuery.");
+  });
+});
+</script><script>alert("Olá, mundo!");</script>
+
+<!-- Botão de exemplo para o jQuery. -->
+<input id="botao" type="button" value="Clique em mim!" />
+
+## Testes com JavaScript
