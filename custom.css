@@ -1,8 +1,8 @@
 
-#fundo {
-color: white;
-background-color: black;
-}
+.fundo {
+	color: white;
+	background-color: black;
+	}
 
 .reveal section del {
   color: red;
@@ -12,6 +12,14 @@ background-color: black;
   color: blue;
 }
 
+.exclaim .reveal .state-background {
+  background: black;
+} 
 
+.exclaim .reveal h1,
+.exclaim .reveal h2,
+.exclaim .reveal p {
+  color: white;
+}
 
 

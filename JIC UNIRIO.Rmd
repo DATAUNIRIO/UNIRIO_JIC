@@ -22,6 +22,12 @@ library(datasauRus)
 library(wordcloud2)
 ```
 
+
+```{r datasaurus, echo=TRUE}
+dados <- datasaurus_dozen[1:142,]
+cor(dados$x,dados$y)
+```
+
 Começo o curso registrado a minha solidariedade com a UERJ. NÃO ESTÁ NORMAL!
 
 ### RMarkdown: O devir revolucionário da Estatística/Ciência de Dados
