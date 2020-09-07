@@ -1,0 +1,130 @@
+---
+title: "RMarkdownBootstrap"
+author: "Thiago"
+date: "8 de agosto de 2017"
+output: 
+  html_document:
+    code_folding: hide
+# output: 
+#   html_document:
+#     theme: null
+#     highlight: null
+#     css: bootstrap.min.css # Arquivo CSS do Bootstrap.
+---
+
+<!-- Declaração do CSS. -->
+<style>
+  h2 {
+    font-size: 50px !important;
+    color: crimson !important
+  }
+  
+  h3 {
+    color: #70a0ed;
+  }
+  
+  /* Classe (identificada por . [ponto]) - pode ser reutilizada quantas vezes se quiser.  */
+  .esquerda {
+    width: 45%;
+    float: left; /* Flutuação à esquerda (como se as divs fossem enfileiradas). */
+    background-color: #065970;
+    padding-left: 5px;
+    color: white;
+  }
+  
+  .direita {
+    width: 45%;
+    float: right; /* Flutuação à esquerda (como se as divs fossem enfileiradas). */
+    background-color: #065970;
+    padding-left: 5px;
+    color: white;
+  }
+  
+  /* ID (identificado por # [tralha]) - pode ser utilizado apenas uma vez (boa prática, embora o browser releve).  */
+  #fancybox {
+    float: left;
+    background-color: #065970;
+    margin-bottom: 25px;
+    color: white;
+  }
+  
+  .red{ background-color: #ed7070; }
+  
+  .green { background-color: #c3ed70; }
+  
+  .blue { background-color: #709fed; }
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+<!-- Divs são como invólucros para linhas de conteúdo, podendo-lhes ser aplicado estilo (classes ou ids CSS). -->
+<div class="esquerda">
+  This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+</div>
+
+<p>  When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia ex vel risus euismod tempor. Integer eget condimentum enim, id interdum felis. Donec at lacus nec sapien tempus vestibulum ac quis eros. Vivamus vitae nisl eu quam ullamcorper feugiat vel vel lorem. Integer hendrerit dui a ultrices mollis.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia ex vel risus euismod tempor. Integer eget condimentum enim, id interdum felis. Donec at lacus nec sapien tempus vestibulum ac quis eros. Vivamus vitae nisl eu quam ullamcorper feugiat vel vel lorem. Integer hendrerit dui a ultrices mollis.
+
+  <div class="direita">
+  This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+</div>
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia ex vel risus euismod tempor. Integer eget condimentum enim, id interdum felis. Donec at lacus nec sapien tempus vestibulum ac quis eros. Vivamus vitae nisl eu quam ullamcorper feugiat vel vel lorem. Integer hendrerit dui a ultrices mollis.
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia ex vel risus euismod tempor. Integer eget condimentum enim, id interdum felis. Donec at lacus nec sapien tempus vestibulum ac quis eros. Vivamus vitae nisl eu quam ullamcorper feugiat vel vel lorem. Integer hendrerit dui a ultrices mollis.
+
+<div id="fancybox">
+### Lorem Ipsum
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia ex vel risus euismod tempor. Integer eget condimentum enim, id interdum felis. Donec at lacus nec sapien tempus vestibulum ac quis eros. Vivamus vitae nisl eu quam ullamcorper feugiat vel vel lorem. Integer hendrerit dui a ultrices mollis.
+</div>
+
+
+<!-- Usando o Bootstrap - Sistemas de Grids. -->
+
+<div class="row">
+  <div class="col-md-7 red">
+    Vermelho
+  </div>
+  
+  <div class="col-md-3 green">
+    Verde
+  </div>
+  
+  <div class="col-md-2 blue">
+    Azul
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2"></div>
+  
+  <div class="col-md-8">
+      
+```{r cars}
+summary(cars)
+```
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+  </div>
+  
+  <div class="col-md-2"></div>
+</div>
+<!-- Fim Bootstrap. -->
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+

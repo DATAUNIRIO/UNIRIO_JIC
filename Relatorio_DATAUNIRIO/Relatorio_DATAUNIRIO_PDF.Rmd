@@ -1,0 +1,66 @@
+---
+title: "RMarkdownBootstrap"
+author: "Thiago"
+date: "8 de agosto de 2017"
+geometry: margin=1cm
+template: defs.tex
+output: pdf_document
+always_allow_html: yes
+toc: true
+toc_depth: 2
+number_sections: true
+---
+
+template: defs.tex
+latex_engine: lualatex
+latex_engine: xelatex
+usepackage[utf8]{inputenc}
+\definecolor{color1}{rgb}{0.0, 0.13, 0.28}
+\definecolor{color2}{rgb}{0.25, 0.29, 0.3}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\def\leftboxbegin{
+\begin{wrapfigure}{l}{0.5\textwidth}
+\begin{tcolorbox}[colback=color1,colframe=color1,coltext=white,arc=0mm,boxrule=0pt]
+}
+\def\leftboxend{
+\end{tcolorbox}
+\end{wrapfigure}
+}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## R Markdown
+
+
+\leftboxbegin
+Você sabia que o R pode ser baixado de graça? É só entrar no site \url{https://www.r-project.org/} e fazer o download
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+\leftboxend
+
+
+when you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+### Lorem Ipsum
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia ex vel risus euismod tempor. Integer eget condimentum enim, id interdum felis. Donec at lacus nec sapien tempus vestibulum ac quis eros. Vivamus vitae nisl eu quam ullamcorper feugiat vel vel lorem. Integer hendrerit dui a ultrices mollis.
+
+
+
+```{r cars}
+summary(cars)
+```
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
